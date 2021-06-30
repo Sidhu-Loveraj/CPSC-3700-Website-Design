@@ -1,0 +1,69 @@
+#magnifying-glass {
+  height: 2.5rem;
+  width: auto;
+}
+
+.search-bar {
+  margin: 4rem auto;
+  background: #fff;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 0.66rem 1.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+.search-bar:hover input {
+  cursor: pointer;
+}
+
+.search-bar input {
+  background: transparent;
+  width: 60rem;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.contact-us {
+  border-bottom: 2px solid var(--gray-600);
+  text-align: center;
+}
+
+.contact-us h2 {
+  padding-top: 40px;
+}
+.contact-options {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.vl {
+  background-color: #6977e0;
+  height: 220px;
+  width: 8px;
+  position: relative;
+  padding: 2rem 0.05rem;
+  bottom: 10px;
+}
+
+.contact button:hover {
+  background: #6977e0;
+}

@@ -1,0 +1,145 @@
+.button-group {
+  display: flex;
+  background: white;
+  border: 1px solid var(--primary);
+  width: fit-content;
+}
+
+.button-group button {
+  margin: 0;
+  background: #fbfcff;
+  border-radius: 0;
+  color: var(--primary);
+  width: 120px;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.button-group button.tier-selected {
+  color: white;
+  background: var(--primary);
+}
+
+.button-group button:first-child {
+  border-right: 1px solid var(--primary);
+}
+
+#yearly span {
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem;
+  color: #d02629;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.pricing-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid var(--gray-600);
+  padding-bottom: 3rem;
+}
+
+.pricing-info h1 {
+  font-size: 2.5rem;
+}
+
+.pricing-table {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  /* margin: 1rem; */
+  padding: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  border-radius: 12px;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.pricing-card h2 {
+  text-decoration: underline;
+  margin-top: 0.5rem;
+}
+
+.pricing-card p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.pricing-card ul {
+  line-height: 2rem;
+  padding-left: 0;
+}
+
+.pricing-card span {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.pricing-card small {
+  margin-bottom: 1rem;
+}
+
+.pricing-card__featured {
+  color: white;
+}
+
+.pricing-card__featured h2 {
+  color: white;
+}
+
+.pricing-card__featured span {
+  color: white;
+}
+
+.sparky {
+  text-align: center;
+  padding: 1rem 0 3rem;
+}
+
+.sparky h2 {
+  text-decoration: underline;
+  margin: 2rem 0 0;
+}
+
+.sparky p {
+  margin: 1rem 0;
+}
+
+.crypto {
+  text-align: center;
+  padding: 1rem 0 2rem;
+}
+
+.crypto-marquee {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.crypto-icon {
+  width: 40px;
+  text-align: center;
+  margin: 1rem 1.5rem;
+}
+.crypto-icon img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 0.4rem;
+}
+
+/* .crypto-icon span {} */

@@ -1,0 +1,88 @@
+.feature-row {
+  margin: 1.25rem 0;
+}
+
+.feature-row--container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.feature {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.feature h2 {
+  margin: 0;
+}
+
+.feature p {
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature img {
+  margin-bottom: 1rem;
+  /* height: 100px;
+  width: 100px; */
+}
+
+.feature-section {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.feature-section > div {
+  flex: 1;
+  padding: 1rem 3rem;
+}
+
+.feature-section-img {
+  text-align: right;
+}
+
+.feature-section-img img {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.feature-section ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.feature-section ul li {
+  font-size: 1.25rem;
+  line-height: 3rem;
+}
+
+.feature-section:not(.feature-section__inverted) ul li::before {
+  content: "-";
+  padding-right: 1rem;
+}
+
+.feature-section__inverted {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.feature-section__inverted ul li::after {
+  content: "-";
+  padding-left: 1rem;
+}
+
+.feature-section__inverted .feature-section-img {
+  text-align: left;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark | Home</title>
+    <link rel="stylesheet" href="./assets/variables.css" />
+    <link rel="stylesheet" href="./assets/helpers.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/home.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+  </head>
+  <body>
+    <aside class="drawer">
+      <div><span class="close-btn" onclick="closeNav()">&times;</span></div>
+      <ul class="font-weight-bold">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./support.html">Support</a></li>
+      </ul>
+    </aside>
+    <nav class="nav-transparent">
+      <span onclick="openNav()" class="nav-drawer-icon">&#9776;</span>
+      <div class="logo">
+        <img src="./assets/images/spark-logo.svg" alt="Spark logo" />
+        <span>Spark</span>
+      </div>
+      <ul class="font-weight-bold">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./support.html">Support</a></li>
+      </ul>
+      <div>
+        <button class="btn-transparent">Log in</button>
+        <button id="sign-up" class="btn-primary btn-primary--invert">
+          Sign up
+        </button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="hero bg-plum-plate">
+        <div class="container-1000">
+          <h1>Take Control of Your Financial Future</h1>
+          <p>
+            Our revolutionary software provides the tools you need to manage
+            your entire investment portfolio. Whether you're a novice investor
+            or a veteran day trader, Spark has the features for you.
+          </p>
+          <div class="d-flex align-items-center justify-content-center">
+            <button class="btn-primary btn-primary--invert btn-large">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials section">
+        <div class="container-1000">
+          <h2>Trusted by over 10,000+ Users</h2>
+          <div class="d-flex testimonials--quote">
+            <span>&#10077;</span>
+            <p>
+              Great customer support and easy to use platform. I've been using
+              the service for 3 years and I love every moment.
+            </p>
+            <span>&#10078;</span>
+          </div>
+          <hr class="testimonials--spacer" />
+          <span class="testimonials--author">Jerry P. | Little Rock, AK</span>
+        </div>
+      </div>
+      <div class="feature-row section">
+        <div class="feature-row--container">
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/nolan/128/alarm.png"
+              alt="Real time notifications"
+            />
+            <h2>Real-time Notifications</h2>
+            <p>
+              Never miss an opportunity to buy or sell at your desired price
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/nolan/128/cancel.png"
+              alt="No commission fees"
+            />
+            <h2>No Commission Fees</h2>
+            <p>We pride ourselves on having a commission-free experience</p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://img.icons8.com/nolan/128/private2.png"
+              alt="Stable and secure"
+            />
+            <h2>Stable and Secure</h2>
+            <p>Securing your financial data is our #1 concern</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-section-img">
+          <img src="./assets/images/growth.svg" alt="Growth investing" />
+        </div>
+        <div class="feature-section-info">
+          <h2>Automated Investing for Anyone</h2>
+          <ul>
+            <li>Let our automated portfolios work for you</li>
+            <li>Take the stress out of the stock market</li>
+          </ul>
+          <button
+            class="outline"
+            onclick="window.location.href='./products.html#basic'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div class="feature-section feature-section__inverted section--secondary">
+        <div class="feature-section-img">
+          <img src="./assets/images/investing.svg" alt="Investment" />
+        </div>
+        <div class="feature-section-info">
+          <h2>Want full control of your investments? Right this way!</h2>
+          <ul>
+            <li>
+              Spark offers complete access to the market so you can trade any
+              stock
+            </li>
+            <li>Use our AI advisor to help you make decisions</li>
+            <li>Set market limits to auto buy/sell shares</li>
+          </ul>
+          <button
+            class="outline"
+            onclick="window.location.href='./products.html#sparky-info'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-section-img">
+          <img src="./assets/images/crypto.svg" alt="Crypto" />
+        </div>
+        <div class="feature-section-info">
+          <h2>We Support Cryptocurrency</h2>
+          <ul>
+            <li>
+              Spark offers trading of over 100 different cryptocurrencies like
+              BTC, ETH, DOGE, and more
+            </li>
+            <li>Trade cryptocurrencies 24/7</li>
+            <li>Quickly exchange between different currencies</li>
+          </ul>
+          <button
+            class="outline"
+            onclick="window.location.href='./products.html#crypto-info'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div class="newsletter"></div>
+      <div class="footer bg-plum-plate">
+        <div class="footer-rows container-1000">
+          <div>
+            <span>Site Map</span>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./support.html">Support</a></li>
+            </ul>
+          </div>
+          <div>
+            <span>Follow us on Social Media</span>
+            <ul>
+              <li><a href="https://www.facebook.com">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://www.twitter.com">Twitter</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>123 Main St.</p>
+            <p>Seattle, WA 98105</p>
+          </div>
+        </div>
+        <div class="footer-copy">
+          <span>&copy; 2021 Spark Inc.</span>
+        </div>
+      </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

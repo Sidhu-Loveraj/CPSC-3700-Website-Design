@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark | Support</title>
+    <link rel="stylesheet" href="./assets/variables.css" />
+    <link rel="stylesheet" href="./assets/helpers.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <link rel="stylesheet" href="./assets/support.css" />
+  </head>
+  <body>
+    <aside class="drawer">
+      <div><span class="close-btn" onclick="closeNav()">&times;</span></div>
+      <ul class="font-weight-bold">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a class="active" href="./support.html">Support</a></li>
+      </ul>
+    </aside>
+    <nav class="nav-transparent">
+      <span onclick="openNav()" class="nav-drawer-icon">&#9776;</span>
+      <div class="logo">
+        <img src="./assets/images/spark-logo.svg" alt="Spark logo" />
+        <span>Spark</span>
+      </div>
+      <ul class="font-weight-bold">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a class="active" href="./support.html">Support</a></li>
+      </ul>
+      <div>
+        <button class="btn-transparent">Log in</button>
+        <button id="sign-up" class="btn-primary btn-primary--invert">
+          Sign up
+        </button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="hero bg-plum-plate">
+        <div class="container-1000">
+          <h1>How can we help?</h1>
+          <p>We hope you enjoy our world class customer support!</p>
+          <div class="search-bar">
+            <input type="text" placeholder="Search" />
+            <img
+              id="magnifying-glass"
+              src="https://img.icons8.com/nolan/64/search.png"
+              alt="search icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us">
+      <div class="container-1000">
+        <h2>How would you like to reach us?</h2>
+        <div class="contact-options">
+          <div class="contact">
+            <img
+              src="https://img.icons8.com/nolan/128/apple-phone.png"
+              alt="phone icon"
+            />
+            <h3>Talk to a representative</h3>
+            <button class="btn-primary btn-large">Call</button>
+          </div>
+          <div class="vl"></div>
+          <div class="contact">
+            <img
+              src="https://img.icons8.com/nolan/128/apple-mail.png"
+              alt="email icon"
+            />
+            <h3>Send us an Email</h3>
+            <button class="btn-primary btn-large">Email</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <h1>Frequently Asked Questions</h1>
+      <div class="accordion">
+        <div class="question" onclick="toggleQuestion(this)">
+          <span>How can I fund my account?</span>
+          <span class="chevron">&#9660;</span>
+        </div>
+        <div class="answer">
+          <p>
+            You can fund your account through an Electronic ACH, wire, check,
+            internal transfer or by depositing securities like stock or
+            cryptocurrency.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question" onclick="toggleQuestion(this)">
+          <span>Are my securities insured?</span>
+          <span class="chevron">&#9660;</span>
+        </div>
+        <div class="answer">
+          <p>
+            Spark's insurance policy provided coverage on cash and securities up
+            to $150 million, subject to a maximum limit of $40 million for any
+            one customer's securities and $1 million for any one customer's
+            cash.
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="question" onclick="toggleQuestion(this)">
+          <span>How does Sparky the A.I work?</span>
+          <span class="chevron">&#9660;</span>
+        </div>
+        <div class="answer">
+          <p>
+            Sparky utilizes a variety of metrics against a stock's and crypto's
+            performance such as the relative strength index and moving averages
+            to indicate if a stock is a good buy or sell.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer bg-plum-plate">
+      <div class="footer-rows container-1000">
+        <div>
+          <span>Site Map</span>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./support.html">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <span>Follow us on Social Media</span>
+          <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>123 Main St.</p>
+          <p>Seattle, WA 98105</p>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2021 Spark Inc.</span>
+      </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

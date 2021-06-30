@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark | Products</title>
+    <link rel="stylesheet" href="./assets/variables.css" />
+    <link rel="stylesheet" href="./assets/helpers.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/products.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+  </head>
+  <body>
+    <aside class="drawer">
+      <div><span class="close-btn" onclick="closeNav()">&times;</span></div>
+      <ul class="font-weight-bold">
+        <li><a href="./index.html">Home</a></li>
+        <li><a class="active" href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./support.html">Support</a></li>
+      </ul>
+    </aside>
+    <nav class="nav-bg">
+      <span onclick="openNav()" class="nav-drawer-icon">&#9776;</span>
+      <div class="logo">
+        <img src="./assets/images/spark-logo.svg" alt="Spark logo" />
+        <span>Spark</span>
+      </div>
+      <ul class="font-weight-bold">
+        <li><a href="./index.html">Home</a></li>
+        <li><a class="active" href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./support.html">Support</a></li>
+      </ul>
+      <div>
+        <button class="btn-transparent">Log in</button>
+        <button id="sign-up" class="btn-primary">Sign up</button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="pricing-info">
+        <h1>Pricing to suit all investors</h1>
+        <div class="button-group">
+          <button
+            onclick="setTierLength('monthly')"
+            class="tier-selected button-group--btn"
+            id="monthly"
+          >
+            Monthly
+          </button>
+          <button
+            onclick="setTierLength('yearly')"
+            id="yearly"
+            class="button-group--btn"
+          >
+            Yearly <span>10% off</span>
+          </button>
+        </div>
+        <div class="pricing-table">
+          <div class="pricing-card" id="basic">
+            <h2>Basic</h2>
+            <span>$19.99</span><small>Monthly</small>
+            <button class="cta btn-primary">Get Started</button>
+            <ul>
+              <li>Automated investments</li>
+              <li>Commission-free trading</li>
+              <li>Automated deposits</li>
+            </ul>
+          </div>
+          <div
+            class="pricing-card pricing-card__featured bg-plum-plate"
+            id="premium"
+          >
+            <h2>Premium</h2>
+            <span>$49.99</span><small>Monthly</small>
+            <button class="cta btn-primary btn-primary--invert">
+              Get Started
+            </button>
+            <p>Everything in Basic and:</p>
+            <ul>
+              <li>AI advisor</li>
+              <li>Trade cryptocurrencies</li>
+              <li>Real-time alerts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sparky section section--secondary" id="sparky-info">
+        <div class="container-1000">
+          <h1>Take advantage of Sparky, our revolutionary AI</h1>
+          <h2>How it works</h2>
+          <p>
+            Sparky is a bot powered by artificial intelligence that can watch
+            your portfolio over time and intelligently advise you on what your
+            next trades should be. Sparky looks out for individual stock
+            performance, portfolio diversity, and many other indicators to help
+            you manage even the most complex portfolios.
+          </p>
+        </div>
+      </div>
+      <div class="crypto section" id="crypto-info">
+        <div class="container-1000">
+          <h1>Trade Crypto With Ease</h1>
+          <div class="crypto-marquee">
+            <div class="crypto-icon">
+              <img src="./assets/images/cryptos/btc.svg" alt="btc" />
+              <span>BTC</span>
+            </div>
+            <div class="crypto-icon">
+              <img src="./assets/images/cryptos/eth.svg" alt="eth" />
+              <span>ETH</span>
+            </div>
+            <div class="crypto-icon">
+              <img src="./assets/images/cryptos/doge.svg" alt="doge" />
+              <span>DOGE</span>
+            </div>
+            <div class="crypto-icon">
+              <img src="./assets/images/cryptos/ltc.svg" alt="ltc" />
+              <span>LTC</span>
+            </div>
+            <div class="crypto-icon">
+              <img src="./assets/images/cryptos/bch.svg" alt="bch" />
+              <span>BCH</span>
+            </div>
+            <div class="crypto-icon">
+              <img src="./assets/images/cryptos/xmr.svg" alt="xmr" />
+              <span>XMR</span>
+            </div>
+            <div class="crypto-icon">
+              <img src="./assets/images/cryptos/xrp.svg" alt="xrp" />
+              <span>XRP</span>
+            </div>
+          </div>
+          <p>
+            Spark offers trading for hundreds of different cryptocurrencies,
+            without transaction fees.
+          </p>
+        </div>
+      </div>
+      <div class="testimonials section section--secondary">
+        <div class="container-1000">
+          <h2>Trusted by over 10,000+ Users</h2>
+          <div class="d-flex testimonials--quote">
+            <span>&#10077;</span>
+            <p>
+              Great customer support and easy to use platform. I've been using
+              the service for 3 years and I love every moment.
+            </p>
+            <span>&#10078;</span>
+          </div>
+          <hr class="testimonials--spacer" />
+          <span class="testimonials--author">Jerry P. | Little Rock, AK</span>
+        </div>
+      </div>
+      <div class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordion">
+          <div class="question" onclick="toggleQuestion(this)">
+            <span>Can I trade any cryptocurrency?</span>
+            <span class="chevron">&#9660;</span>
+          </div>
+          <div class="answer">
+            <p>
+              No. Spark offers zero fee trading for hundreds of the most popular
+              cryptocurrencies available, but we do not offer trading for every
+              single cryptocurrency.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="question" onclick="toggleQuestion(this)">
+            <span>Are my securities insured?</span>
+            <span class="chevron">&#9660;</span>
+          </div>
+          <div class="answer">
+            <p>
+              Spark's insurance policy provided coverage on cash and securities
+              up to $150 million, subject to a maximum limit of $40 million for
+              any one customer's securities and $1 million for any one
+              customer's cash.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="question" onclick="toggleQuestion(this)">
+            <span>How does Sparky the A.I work?</span>
+            <span class="chevron">&#9660;</span>
+          </div>
+          <div class="answer">
+            <p>
+              Sparky utilizes a variety of metrics against a stock's and
+              crypto's performance such as the relative strength index and
+              moving averages to indicate if a stock is a good buy or sell.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer bg-plum-plate">
+      <div class="footer-rows container-1000">
+        <div>
+          <span>Site Map</span>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./support.html">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <span>Follow us on Social Media</span>
+          <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>123 Main St.</p>
+          <p>Seattle, WA 98105</p>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2021 Spark Inc.</span>
+      </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
